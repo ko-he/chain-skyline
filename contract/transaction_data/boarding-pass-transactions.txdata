@@ -1,0 +1,44 @@
+[
+    {
+        "transactionName": "boardingPassExists",
+        "transactionLabel": "A test boardingPassExists transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "createBoardingPass",
+        "transactionLabel": "A test createBoardingPass transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "readBoardingPass",
+        "transactionLabel": "A test readBoardingPass transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "updateBoardingPass",
+        "transactionLabel": "A test updateBoardingPass transaction",
+        "arguments": [
+            "001",
+            "some other value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "deleteBoardingPass",
+        "transactionLabel": "A test deleteBoardingPass transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    }
+]
