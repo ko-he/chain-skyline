@@ -1,8 +1,8 @@
 {
 	"folders": [
 		{
-			"name": "contract",
-			"path": "contract"
+			"name": "passenger",
+			"path": "contacts/passenger"
 		}
 	],
 	"settings": {}

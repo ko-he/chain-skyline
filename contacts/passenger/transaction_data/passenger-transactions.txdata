@@ -1,0 +1,44 @@
+[
+    {
+        "transactionName": "passengerExists",
+        "transactionLabel": "A test passengerExists transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "createPassenger",
+        "transactionLabel": "A test createPassenger transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "readPassenger",
+        "transactionLabel": "A test readPassenger transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "updatePassenger",
+        "transactionLabel": "A test updatePassenger transaction",
+        "arguments": [
+            "001",
+            "some other value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "deletePassenger",
+        "transactionLabel": "A test deletePassenger transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    }
+]
