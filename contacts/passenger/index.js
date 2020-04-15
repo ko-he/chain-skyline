@@ -4,7 +4,7 @@
 
 'use strict';
 
-const PassengerContract = require('./lib/passenger-contract');
+const PassengerContract = require('./lib/PassengerContract');
 
 module.exports.PassengerContract = PassengerContract;
 module.exports.contracts = [ PassengerContract ];
