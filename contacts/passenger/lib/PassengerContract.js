@@ -5,7 +5,7 @@
 'use strict';
 
 const { Contract } = require('fabric-contract-api');
-const passenger = require('./Passenger')
+const Passenger = require('./Passenger')
 
 class PassengerContract extends Contract {
 
@@ -14,14 +14,10 @@ class PassengerContract extends Contract {
     return (!!buffer && buffer.length > 0);
   }
 
-  async createPassenger(ctx, passengerId, value) {
-    const exists = await this.passengerExists(ctx, passengerId);
-    if (exists) {
-      throw new Error(`The passenger ${passengerId} already exists`);
-    }
-    const asset = { value };
-    const buffer = Buffer.from(JSON.stringify(asset));
-    await ctx.stub.putState(passengerId, buffer);
+  async createPassenger(ctx, args) {
+    const passenger = Passenger.fromJson(args)
+    const buffer = Buffer.from(passenger.toJsonString);
+    await ctx.stub.putState(passenger.id, buffer);
   }
 
   async readPassenger(ctx, passengerId) {

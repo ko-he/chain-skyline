@@ -12,7 +12,20 @@ class Passenger {
   }
 
   /**
-   * 
+   * @returns {string}
+   */
+  toJsonStr() {
+    return JSON.stringify(
+      {
+        id: this.id,
+        firstName: this.firstName,
+        lastName: this.lastName,
+        contryCode: this.contryCode
+      }
+    )
+  }
+
+  /**
    * @param {object} json 
    * @returns {Passenger}
    */
