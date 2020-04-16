@@ -1,0 +1,9 @@
+{
+  "connection_file": "local_fabric_connection.json",
+  "appAdmin": "admin",
+  "appAdminSecret": "adminpw",
+  "orgMSPID": "Org1MSP",
+  "caName": "http://0.0.0.0:17050",
+  "userName": "V1",
+  "gatewayDiscovery": { "enabled": true, "asLocalhost": true }
+}
