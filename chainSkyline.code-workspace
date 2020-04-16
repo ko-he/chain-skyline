@@ -3,6 +3,9 @@
 		{
 			"name": "passenger",
 			"path": "contacts/passenger"
+		},
+		{
+			"path": "."
 		}
 	],
 	"settings": {}
