@@ -5,6 +5,7 @@
 'use strict';
 
 const { Contract } = require('fabric-contract-api');
+const passenger = require('./Passenger')
 
 class PassengerContract extends Contract {
 
