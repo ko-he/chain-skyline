@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"have no test command\""
+    "test": "echo \"have no test command\"",
+    "dev:server": "nodemon -L"
   },
   "author": "ko-he <localhost.ko@gmail.com>",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "@types/node": "^13.11.1",
     "@types/socket.io": "^2.1.4",
     "@types/socket.io-client": "^1.4.32",
+    "nodemon": "^2.0.3",
     "ts-loader": "^7.0.0",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
