@@ -1,35 +1,33 @@
-const webpack = require('webpack')
-const nodeExternals = require("webpack-node-externals")
-const path = require("path")
-
-const BUILD_ROOT = path.join(__dirname, "../dist")
-const SRC_ROOT = path.join(__dirname, "../src")
+const path = require('path');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  context: SRC_ROOT,
-  entry: path.resolve("src", "index.ts"),
+  watch: true,
+  mode: 'development',
+  entry: './src/index.ts',
+  target: 'node',
   externals: [nodeExternals()],
-  output: {
-    filename: "server.js",
-    path: BUILD_ROOT
-  },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
+        loader: 'ts-loader',
         test: /\.ts$/,
-        exclude: /node_modules/,
-        loader: "ts-loader",
+        exclude: [
+          /node_modules/
+        ],
         options: {
-          configFile: "tsconfig.json"
+          configFile: 'tsconfig.json'
         }
       }
     ]
   },
   resolve: {
-    extensions: [".ts", ".js", ".json"],
-    alias: {
-      "@": path.join(__dirname, "/src/")
-    }
+    extensions: ['.ts', '.js']
+  },
+  output: {
+    filename: 'server.js',
+    path: path.resolve(__dirname, 'dist')
   },
   mode: "development",
   devtool: "inline-source-map",
@@ -38,4 +36,4 @@ module.exports = {
     host: "0.0.0.0",
     port: 3000
   }
-}
+};

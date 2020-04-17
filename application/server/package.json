@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"have no test command\"",
-    "dev:server": "nodemon -L"
+    "dev:server": "webpack --progress --colors"
   },
   "author": "ko-he <localhost.ko@gmail.com>",
   "license": "ISC",
