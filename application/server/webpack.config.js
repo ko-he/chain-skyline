@@ -1,5 +1,5 @@
-const path = require('path');
-const nodeExternals = require('webpack-node-externals');
+const path = require('path')
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   watch: true,
@@ -30,10 +30,5 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   mode: "development",
-  devtool: "inline-source-map",
-  devServer: {
-    contentBase: "dist",
-    host: "0.0.0.0",
-    port: 3000
-  }
-};
+  devtool: "inline-source-map"
+}
