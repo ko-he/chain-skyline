@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout } from 'antd'
 import MainHader from './components/organisms/MainHaeder'
+import TopPageContent from './components/organisms/TopPageContent'
 
 const TopPage: React.FC<{}> = _props => {
   return (
@@ -8,7 +9,7 @@ const TopPage: React.FC<{}> = _props => {
       <MainHader />
       <Layout.Content>
         <Layout className="site-layout-background">
-          <Layout.Content style={{ minHeight: 280 }}>Content</Layout.Content>
+          <TopPageContent />
         </Layout>
       </Layout.Content>
     </Layout>
