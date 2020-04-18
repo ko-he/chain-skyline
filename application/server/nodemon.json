@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+    "env": {
+    "NODE_ENV": "development"
+  },
+  "watch": ["dist"],
+  "exec": "node ./dist/server.js"
+}
