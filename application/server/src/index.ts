@@ -1,15 +1,7 @@
-
 import express from "express"
+import router from "./presenter/router"
 
 const app = express()
-const router = express.Router()
-
-router.get(
-  '/',
-  async (req: express.Request, res: express.Response): Promise<void> => {
-    res.send('hello world')
-  }
-);
 
 app.use("/", router)
 
