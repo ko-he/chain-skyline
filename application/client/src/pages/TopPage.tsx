@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout } from 'antd'
-import MainHader from './components/organisms/MainHaeder'
-import TopPageContent from './components/organisms/TopPageContent'
+import MainHader from '../components/organisms/MainHaeder'
+import TopPageContent from '../components/organisms/TopPageContent'
 
 const TopPage: React.FC<{}> = _props => {
   return (
